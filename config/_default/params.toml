@@ -92,7 +92,7 @@ emitMetadata = "0"
 inputPosition = "bottom"
 lazyLoading = false
 lightTheme = "light"
-darkTheme = ""
+darkTheme = "dark_dimmed"
 
 # <script src="https://giscus.app/client.js"
 #         data-repo="5-23/blog"

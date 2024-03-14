@@ -13,4 +13,5 @@ defaultContentLanguage = "ko"
 hasCJKLanguage = false
 
 # Change it to your Disqus shortname before using
-disqusShortname = "hugo-theme-stack"
+# disqusShortname = "hugo-theme-stack"
+theme = "hugo-theme-stack"

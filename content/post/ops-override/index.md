@@ -1,8 +1,9 @@
 ---
 title: 연산자 오버로드
 description: Welcome to Hugo Theme Stack
-slug: rust-syntax-sus
+slug: rust-syntax-ops
 date: 2024-03-14 00:00:00+0000
+image: thub.jpg
 categories:
     - rust-syntax
 tags:
@@ -24,6 +25,7 @@ struct Vec2 {
 
 // Add 상속
 impl Add for Vec2 {
+    // 더했을때 반환할 타입
     type Output = Vec2;
 
         /*
