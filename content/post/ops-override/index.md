@@ -3,7 +3,7 @@ title: 연산자 오버로드
 description: Welcome to Hugo Theme Stack
 slug: rust-syntax-ops
 date: 2024-03-14 00:00:00+0000
-image: thub.jpg
+image: thumb.jpg
 categories:
     - rust-syntax
 tags:
