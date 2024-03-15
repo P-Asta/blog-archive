@@ -1,7 +1,7 @@
 ---
 title: Zero부터 시작하는 bevy - 0
 description: 배비 설정및 화면 띄우기
-slug: bevy-0
+slug: zero2bevy-0
 date: 2024-03-14 00:00:00+0000
 image: thumb.jpg
 categories:
@@ -11,11 +11,8 @@ tags:
 weight: 1
 ---
 
-# bevy - 0
-배비 설정및 화면 띄우기
-
-## 베비 설치
-```bash
+# 베비 설치
+```fish
 cargo new zero2bevy
 cd zero2bevy
 cargo add bevy
@@ -29,7 +26,7 @@ fn main() {
 }
 ```
 
-## 실행 이벤트 감지
+# 실행 이벤트 감지
 베비는 `add_systems(Startup, 함수)`를 사용하여 실행 이벤트를 감시할수 있다
 ```rs
 use bevy::prelude::*;
@@ -45,7 +42,7 @@ fn startup() {
 ![hello bevy](startup.png)
 
 
-## 화면 띄우기
+# 화면 띄우기
 화면을 띄우기 위해서는 plugin을 설정해줘야한다 bevy에서 plugin을 설정하고 싶다면 add_plugin메서드를 사용하면 된다
 ```rs
 use bevy::prelude::*;
