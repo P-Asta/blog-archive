@@ -2,7 +2,7 @@
 title: Zero부터 시작하는 bevy - 2
 description: 번들의 종류
 slug: zero2bevy-2
-date: 2024-03-15 00:00:00+0000
+date: 2024-03-16 00:00:00+0000
 image: thumb.jpg
 categories:
     - bevy
