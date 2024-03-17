@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on rustacean@5-23.dev</title>
+        <link>https://blog.5-23.dev/categories/</link>
+        <description>Recent content in Categories on rustacean@5-23.dev</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 16 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.5-23.dev/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Bevy</title>
+        <link>https://blog.5-23.dev/categories/bevy/</link>
+        <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.5-23.dev/categories/bevy/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Gleam</title>
+        <link>https://blog.5-23.dev/categories/gleam/</link>
+        <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.5-23.dev/categories/gleam/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Rust-Syntax</title>
+        <link>https://blog.5-23.dev/categories/rust-syntax/</link>
+        <pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.5-23.dev/categories/rust-syntax/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Example Category</title>
+        <link>https://blog.5-23.dev/categories/example-category/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.5-23.dev/categories/example-category/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
