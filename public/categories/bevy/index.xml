@@ -6,10 +6,10 @@
         <description>Recent content in Bevy on rustacean@5-23.dev</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 24 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/bevy/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/bevy/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Zero부터 시작하는 bevy - 3</title>
         <link>http://localhost:1313/p/zero2bevy-3/</link>
-        <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+        <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/p/zero2bevy-3/</guid>
         <description>&lt;img src="http://localhost:1313/p/zero2bevy-3/thumb.jpg" alt="Featured image of post Zero부터 시작하는 bevy - 3" /&gt;&lt;h2 id=&#34;컴포넌트-만들기&#34;&gt;컴포넌트 만들기&lt;/h2&gt;
@@ -103,25 +103,29 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/defualt-run.png&#34;
-	
-	
-	
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/zero2bevy-3/defualt-run.png&#34;
+	width=&#34;3360&#34;
+	height=&#34;2100&#34;
+	srcset=&#34;http://localhost:1313/p/zero2bevy-3/defualt-run_hu207d69dd0c386a4fea201fddf61f1c1b_802541_480x0_resize_box_3.png 480w, http://localhost:1313/p/zero2bevy-3/defualt-run_hu207d69dd0c386a4fea201fddf61f1c1b_802541_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;실행결과&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;160&#34;
+		data-flex-basis=&#34;384px&#34;
 	
 &gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>Zero부터 시작하는 bevy - 특별편?</title>
-        <link>http://localhost:1313/p/zero2bevy-3/</link>
+        <link>http://localhost:1313/p/zero2bevy-2.5/</link>
         <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/zero2bevy-3/</guid>
-        <description>&lt;img src="http://localhost:1313/p/zero2bevy-3/thumb.jpg" alt="Featured image of post Zero부터 시작하는 bevy - 특별편?" /&gt;&lt;h2 id=&#34;설정&#34;&gt;설정&lt;/h2&gt;
+        <guid>http://localhost:1313/p/zero2bevy-2.5/</guid>
+        <description>&lt;img src="http://localhost:1313/p/zero2bevy-2.5/thumb.jpg" alt="Featured image of post Zero부터 시작하는 bevy - 특별편?" /&gt;&lt;h2 id=&#34;설정&#34;&gt;설정&lt;/h2&gt;
 &lt;p&gt;배경을 없에기 위해 main함수에 이 옵션을 추가해줘야한다&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -165,7 +169,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}))&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;없는곳-클리&#34;&gt;없는곳 클리&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;없는곳-클릭설정&#34;&gt;없는곳 클릭설정&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -196,10 +200,10 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/5-23/pet&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;응용코드&lt;/a&gt;
-&lt;img src=&#34;http://localhost:1313/p/zero2bevy-3/pet.png&#34;
+&lt;img src=&#34;http://localhost:1313/p/zero2bevy-2.5/pet.png&#34;
 	width=&#34;3360&#34;
 	height=&#34;2098&#34;
-	srcset=&#34;http://localhost:1313/p/zero2bevy-3/pet_hub599a67fd175946be6eb79719849c137_769966_480x0_resize_box_3.png 480w, http://localhost:1313/p/zero2bevy-3/pet_hub599a67fd175946be6eb79719849c137_769966_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/zero2bevy-2.5/pet_hub599a67fd175946be6eb79719849c137_769966_480x0_resize_box_3.png 480w, http://localhost:1313/p/zero2bevy-2.5/pet_hub599a67fd175946be6eb79719849c137_769966_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;pet&#34;
