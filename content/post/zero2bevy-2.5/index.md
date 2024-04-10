@@ -33,7 +33,7 @@ App::new()
     }))
 ```
 
-## 없는곳 클리
+## 없는곳 클릭설정
 ```rs
 fn update_cursor_hit_test(
     click: Res<ButtonInput<MouseButton>>,

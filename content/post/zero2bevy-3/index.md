@@ -1,6 +1,6 @@
 ---
 title: Zero부터 시작하는 bevy - 3
-description: 배경 없에기
+description: 컴포넌트 생성하기
 slug: zero2bevy-3
 date: 2024-04-10 00:00:00+0000
 image: thumb.jpg
