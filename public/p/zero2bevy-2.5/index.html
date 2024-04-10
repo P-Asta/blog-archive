@@ -2,18 +2,18 @@
 <html lang="en-us" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="배경 없에기">
-<title>Zero부터 시작하는 bevy - 3</title>
+<title>Zero부터 시작하는 bevy - 특별편?</title>
 
-<link rel='canonical' href='http://localhost:1313/p/zero2bevy-3/'>
+<link rel='canonical' href='http://localhost:1313/p/zero2bevy-2.5/'>
 
-<link rel="stylesheet" href="/scss/style.min.d8118f156935b64eca93aca758476adca858d2c47354971654d9bd2933a0e45f.css"><meta property='og:title' content="Zero부터 시작하는 bevy - 3">
+<link rel="stylesheet" href="/scss/style.min.d8118f156935b64eca93aca758476adca858d2c47354971654d9bd2933a0e45f.css"><meta property='og:title' content="Zero부터 시작하는 bevy - 특별편?">
 <meta property='og:description' content="배경 없에기">
-<meta property='og:url' content='http://localhost:1313/p/zero2bevy-3/'>
+<meta property='og:url' content='http://localhost:1313/p/zero2bevy-2.5/'>
 <meta property='og:site_name' content='rustacean@5-23.dev'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='rust' /><meta property='article:published_time' content='2024-04-10T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-04-10T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/p/zero2bevy-3/thumb.jpg' />
-<meta name="twitter:title" content="Zero부터 시작하는 bevy - 3">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='rust' /><meta property='article:published_time' content='2024-03-24T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-03-24T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/p/zero2bevy-2.5/thumb.jpg' />
+<meta name="twitter:title" content="Zero부터 시작하는 bevy - 특별편?">
 <meta name="twitter:description" content="배경 없에기"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='http://localhost:1313/p/zero2bevy-3/thumb.jpg' />
+    <meta name="twitter:image" content='http://localhost:1313/p/zero2bevy-2.5/thumb.jpg' />
     <link rel="shortcut icon" href="/favicon.png" />
 
     </head>
@@ -229,9 +229,8 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#컴포넌트-만들기">컴포넌트 만들기</a></li>
-    <li><a href="#컴포넌트-생성">컴포넌트 생성</a></li>
-    <li><a href="#이벤트-만들기">이벤트 만들기</a></li>
+    <li><a href="#설정">설정</a></li>
+    <li><a href="#없는곳-클리">없는곳 클리</a></li>
   </ol>
 </nav>
         </div>
@@ -244,15 +243,15 @@
 
             <main class="main full-width">
     <article class="has-image main-article">
-    <header class="article-header" onclick="location.href='\/p\/zero2bevy-3\/'" style="cursor: pointer;" >
+    <header class="article-header" onclick="location.href='\/p\/zero2bevy-2.5\/'" style="cursor: pointer;" >
         <div class="article-image">
-            <a href="/p/zero2bevy-3/">
-                <img src="/p/zero2bevy-3/thumb_hufad68abf6107ffc2ef859ebe1b42b6e2_84202_800x0_resize_q75_box.jpg"
-                        srcset="/p/zero2bevy-3/thumb_hufad68abf6107ffc2ef859ebe1b42b6e2_84202_800x0_resize_q75_box.jpg 800w, /p/zero2bevy-3/thumb_hufad68abf6107ffc2ef859ebe1b42b6e2_84202_1600x0_resize_q75_box.jpg 1600w"
+            <a href="/p/zero2bevy-2.5/">
+                <img src="/p/zero2bevy-2.5/thumb_hufad68abf6107ffc2ef859ebe1b42b6e2_84202_800x0_resize_q75_box.jpg"
+                        srcset="/p/zero2bevy-2.5/thumb_hufad68abf6107ffc2ef859ebe1b42b6e2_84202_800x0_resize_q75_box.jpg 800w, /p/zero2bevy-2.5/thumb_hufad68abf6107ffc2ef859ebe1b42b6e2_84202_1600x0_resize_q75_box.jpg 1600w"
                         width="800" 
                         height="153" 
                         loading="lazy"
-                        alt="Featured image of post Zero부터 시작하는 bevy - 3" />
+                        alt="Featured image of post Zero부터 시작하는 bevy - 특별편?" />
                 
             </a>
         </div>
@@ -271,7 +270,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/zero2bevy-3/">Zero부터 시작하는 bevy - 3</a>
+            <a href="/p/zero2bevy-2.5/">Zero부터 시작하는 bevy - 특별편?</a>
         </h2>
     
         
@@ -297,7 +296,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Apr 10, 2024</time>
+                <time class="article-time--published">Mar 24, 2024</time>
             </div>
         
 
@@ -328,57 +327,8 @@
     <section class="article-content">
     
     
-    <h2 id="컴포넌트-만들기">컴포넌트 만들기</h2>
-<p>화면에 있는 모든 객채를 검사하면 안되니 컴포넌트라는것을 만들어 하나씩 검사해보자.
-나는 <code>MyCustomComponent</code>라는 이름으로 만들었는데 이름은 바꿔도 상관없다</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-rs" data-lang="rs"><span class="line"><span class="cl"><span class="cp">#[derive(Component)]</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">struct</span> <span class="nc">MyCustomComponent</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// 이름은 바꿔도 상관없음
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">    </span><span class="n">name</span>: <span class="nb">String</span><span class="p">,</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="컴포넌트-생성">컴포넌트 생성</h2>
-<p>아까 우리가 만들었던 컴포넌트를 생성해보자</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-rs" data-lang="rs"><span class="line"><span class="cl"><span class="k">fn</span> <span class="nf">setup</span><span class="p">(</span><span class="k">mut</span><span class="w"> </span><span class="n">commands</span>: <span class="nc">Commands</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">commands</span><span class="p">.</span><span class="n">spawn</span><span class="p">(</span><span class="n">Camera2dBundle</span>::<span class="n">default</span><span class="p">());</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// aaa라는 이름으로 MyCustomComponent생성
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">    </span><span class="n">commands</span><span class="p">.</span><span class="n">spawn</span><span class="p">(</span><span class="n">MyCustomComponent</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">name</span>: <span class="s">&#34;aaa&#34;</span><span class="p">.</span><span class="n">to_string</span><span class="p">(),</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">});</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// bbb라는 이름으로 MyCustomComponent생성
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">    </span><span class="n">commands</span><span class="p">.</span><span class="n">spawn</span><span class="p">(</span><span class="n">MyCustomComponent</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">name</span>: <span class="s">&#34;bbb&#34;</span><span class="p">.</span><span class="n">to_string</span><span class="p">(),</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">});</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="이벤트-만들기">이벤트 만들기</h2>
-<p>컴포넌트까지 생성했으니 이제 이벤트를 만들어보자</p>
+    <h2 id="설정">설정</h2>
+<p>배경을 없에기 위해 main함수에 이 옵션을 추가해줘야한다</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -398,34 +348,67 @@
 </span><span class="lnt">15
 </span><span class="lnt">16
 </span><span class="lnt">17
+</span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-rs" data-lang="rs"><span class="line"><span class="cl"><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">App</span>::<span class="n">new</span><span class="p">()</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// ...생략
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">        </span><span class="p">.</span><span class="n">add_systems</span><span class="p">(</span><span class="n">Update</span><span class="p">,</span><span class="w"> </span><span class="n">component_info</span><span class="p">)</span><span class="w"> </span><span class="c1">// Update시스템: 계속 반복되면서 실행되게 해줌
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">        </span><span class="p">.</span><span class="n">run</span><span class="p">();</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-rs" data-lang="rs"><span class="line"><span class="cl"><span class="n">App</span>::<span class="n">new</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">.</span><span class="n">insert_resource</span><span class="p">(</span><span class="n">ClearColor</span><span class="p">(</span><span class="n">Color</span>::<span class="n">rgba</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">)))</span><span class="w"> </span><span class="c1">// 투명배경
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">    </span><span class="p">.</span><span class="n">add_plugins</span><span class="p">(</span><span class="n">DefaultPlugins</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="n">WindowPlugin</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">primary_window</span>: <span class="nb">Some</span><span class="p">(</span><span class="n">Window</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">title</span>: <span class="s">&#34;Bevy game&#34;</span><span class="p">.</span><span class="n">to_string</span><span class="p">(),</span><span class="w"> </span><span class="c1">// 제목
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">            </span><span class="n">canvas</span>: <span class="nb">Some</span><span class="p">(</span><span class="s">&#34;#bevy&#34;</span><span class="p">.</span><span class="n">to_owned</span><span class="p">()),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">prevent_default_event_handling</span>: <span class="nc">false</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">transparent</span>: <span class="nc">true</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">decorations</span>: <span class="nc">false</span><span class="p">,</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">fn</span> <span class="nf">component_info</span><span class="p">(</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 지금 생성되있는 모든 MyCustomComponent 컴포넌트의 정보를 가져옴
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">    </span><span class="n">q</span>: <span class="nc">Query</span><span class="o">&lt;&amp;</span><span class="n">MyCustomComponent</span><span class="o">&gt;</span><span class="p">,</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 소환한 모든 컴포넌트를 반복문을 사용하여 출력
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">component</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">iter</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// 아까 생성한 컴포넌트의 이름을 출력
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">        </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;name: </span><span class="si">{}</span><span class="s">&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">component</span><span class="p">.</span><span class="n">name</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="cp">#[cfg(target_os = </span><span class="s">&#34;macos&#34;</span><span class="cp">)]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">composite_alpha_mode</span>: <span class="nc">CompositeAlphaMode</span>::<span class="n">PostMultiplied</span><span class="p">,</span><span class="w"> </span><span class="c1">// 맥에서 배경 없엠
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">window_level</span>: <span class="nc">bevy</span>::<span class="n">window</span>::<span class="n">WindowLevel</span>::<span class="n">AlwaysOnTop</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="o">..</span><span class="n">default</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="o">..</span><span class="n">default</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}))</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img src="/p/zero2bevy-3/defualt-run.png"
+</div><h2 id="없는곳-클리">없는곳 클리</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-rs" data-lang="rs"><span class="line"><span class="cl"><span class="k">fn</span> <span class="nf">update_cursor_hit_test</span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">click</span>: <span class="nc">Res</span><span class="o">&lt;</span><span class="n">ButtonInput</span><span class="o">&lt;</span><span class="n">MouseButton</span><span class="o">&gt;&gt;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">cursor_world_pos</span>: <span class="nc">Res</span><span class="o">&lt;</span><span class="n">CursorWorldPos</span><span class="o">&gt;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">mut</span><span class="w"> </span><span class="n">q_primary_window</span>: <span class="nc">Query</span><span class="o">&lt;&amp;</span><span class="k">mut</span><span class="w"> </span><span class="n">Window</span><span class="p">,</span><span class="w"> </span><span class="n">With</span><span class="o">&lt;</span><span class="n">PrimaryWindow</span><span class="o">&gt;&gt;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">mut</span><span class="w"> </span><span class="n">q_pet</span>: <span class="nc">Query</span><span class="o">&lt;</span><span class="p">(</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="n">Pet</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">Transform</span><span class="p">),</span><span class="w"> </span><span class="n">With</span><span class="o">&lt;</span><span class="n">Pet</span><span class="o">&gt;&gt;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">primary_window</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">q_primary_window</span><span class="p">.</span><span class="n">single_mut</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// If the window has decorations (e.g. a border) then it should be clickable
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">    </span><span class="n">primary_window</span><span class="p">.</span><span class="n">cursor</span><span class="p">.</span><span class="n">hit_test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"> </span><span class="c1">// 이 값이 바뀔떄 배경 클릭 여부가 결정된다.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><a class="link" href="https://github.com/5-23/pet"  target="_blank" rel="noopener"
+    >응용코드</a>
+<img src="/p/zero2bevy-2.5/pet.png"
 	width="3360"
-	height="2100"
-	srcset="/p/zero2bevy-3/defualt-run_hu207d69dd0c386a4fea201fddf61f1c1b_802541_480x0_resize_box_3.png 480w, /p/zero2bevy-3/defualt-run_hu207d69dd0c386a4fea201fddf61f1c1b_802541_1024x0_resize_box_3.png 1024w"
+	height="2098"
+	srcset="/p/zero2bevy-2.5/pet_hub599a67fd175946be6eb79719849c137_769966_480x0_resize_box_3.png 480w, /p/zero2bevy-2.5/pet_hub599a67fd175946be6eb79719849c137_769966_1024x0_resize_box_3.png 1024w"
 	loading="lazy"
 	
-		alt="실행결과"
+		alt="pet"
 	
 	
 		class="gallery-image" 
@@ -468,7 +451,7 @@
 
 
         <span>
-            마지막 수정:  Apr 10, 2024 00:00 UTC
+            마지막 수정:  Mar 24, 2024 00:00 UTC
         </span>
     </section></footer>
 
@@ -487,23 +470,23 @@
             
                 
 <article class="has-image">
-    <a href="/p/zero2bevy-2.5/">
+    <a href="/p/zero2bevy-3/">
         
         
             <div class="article-image">
-                <img src="/p/zero2bevy-2.5/thumb.6c3fe92aabc32152a365cea3d5761753_hufad68abf6107ffc2ef859ebe1b42b6e2_84202_250x150_fill_q75_box_smart1.jpg" 
+                <img src="/p/zero2bevy-3/thumb.6c3fe92aabc32152a365cea3d5761753_hufad68abf6107ffc2ef859ebe1b42b6e2_84202_250x150_fill_q75_box_smart1.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
-                        alt="Featured image of post Zero부터 시작하는 bevy - 특별편?"
-                        data-key="zero2bevy-2.5" 
+                        alt="Featured image of post Zero부터 시작하는 bevy - 3"
+                        data-key="zero2bevy-3" 
                         data-hash="md5-bD/pKqvDIVKjZc6j1XYXUw==">
                 
             </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">Zero부터 시작하는 bevy - 특별편?</h2>
+            <h2 class="article-title">Zero부터 시작하는 bevy - 3</h2>
         </div>
     </a>
 </article>

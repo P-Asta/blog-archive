@@ -1,8 +1,8 @@
 ---
-title: zero2bevy - 3
+title: Zero부터 시작하는 bevy - 3
 description: 배경 없에기
 slug: zero2bevy-3
-date: 2024-03-24 00:00:00+0000
+date: 2024-04-10 00:00:00+0000
 image: thumb.jpg
 categories:
     - bevy
@@ -10,44 +10,53 @@ tags:
     - rust
 weight: 1
 ---
-## 설정
-배경을 없에기 위해 main함수에 이 옵션을 추가해줘야한다 
+## 컴포넌트 만들기
+화면에 있는 모든 객채를 검사하면 안되니 컴포넌트라는것을 만들어 하나씩 검사해보자.
+나는 `MyCustomComponent`라는 이름으로 만들었는데 이름은 바꿔도 상관없다
 ```rs
-App::new()
-    .insert_resource(ClearColor(Color::rgba(0.0, 0.0, 0.0, 0.0))) // 투명배경
-    .add_plugins(DefaultPlugins.set(WindowPlugin {
-        primary_window: Some(Window {
-            title: "Bevy game".to_string(), // 제목
-            canvas: Some("#bevy".to_owned()),
-            prevent_default_event_handling: false,
-            transparent: true,
-            decorations: false,
-
-            #[cfg(target_os = "macos")]
-            composite_alpha_mode: CompositeAlphaMode::PostMultiplied, // 맥에서 배경 없엠
-
-            window_level: bevy::window::WindowLevel::AlwaysOnTop,
-            ..default()
-        }),
-        ..default()
-    }))
-```
-
-## 없는곳 클리
-```rs
-fn update_cursor_hit_test(
-    click: Res<ButtonInput<MouseButton>>,
-    cursor_world_pos: Res<CursorWorldPos>,
-    mut q_primary_window: Query<&mut Window, With<PrimaryWindow>>,
-    mut q_pet: Query<(&mut Pet, &Transform), With<Pet>>,
-) {
-    let mut primary_window = q_primary_window.single_mut();
-
-    // If the window has decorations (e.g. a border) then it should be clickable
-    primary_window.cursor.hit_test = true; // 이 값이 바뀔떄 배경 클릭 여부가 결정된다.
+#[derive(Component)]
+struct MyCustomComponent { // 이름은 바꿔도 상관없음
+    name: String,
 }
 ```
 
+## 컴포넌트 생성
+아까 우리가 만들었던 컴포넌트를 생성해보자
+```rs
+fn setup(mut commands: Commands) {
+    commands.spawn(Camera2dBundle::default());
+    // aaa라는 이름으로 MyCustomComponent생성
+    commands.spawn(MyCustomComponent {
+        name: "aaa".to_string(),
+    });
+    
+    // bbb라는 이름으로 MyCustomComponent생성
+    commands.spawn(MyCustomComponent {
+        name: "bbb".to_string(),
+    });
+}
+```
 
-[응용코드](https://github.com/5-23/pet)
-![pet](pet.png)
+## 이벤트 만들기
+컴포넌트까지 생성했으니 이제 이벤트를 만들어보자
+
+```rs
+fn main() {
+    App::new()
+        // ...생략
+        .add_systems(Update, component_info) // Update시스템: 계속 반복되면서 실행되게 해줌
+        .run();
+}
+
+fn component_info(
+    // 지금 생성되있는 모든 MyCustomComponent 컴포넌트의 정보를 가져옴
+    q: Query<&MyCustomComponent>,
+) {
+    // 소환한 모든 컴포넌트를 반복문을 사용하여 출력
+    for component in q.iter() {
+        // 아까 생성한 컴포넌트의 이름을 출력
+        println!("name: {}", component.name);
+    }
+}
+```
+![실행결과](defualt-run.png)
