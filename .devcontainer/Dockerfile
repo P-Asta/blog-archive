@@ -27,7 +27,7 @@ RUN apt-get update && apt-get install -y ca-certificates openssl git curl && \
     mv hugo /usr/bin/hugo
 
 # Hugo dev server port
-EXPOSE 1313
+EXPOSE 80
 
 # [Optional] Uncomment this section to install additional OS packages you may want.
 #
