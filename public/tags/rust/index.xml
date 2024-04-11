@@ -6,15 +6,7 @@
         <description>Recent content in Rust on rustacean@5-23.dev</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 11 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.5-23.dev/tags/rust/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Zero부터 시작하는 bevy - 4</title>
-        <link>https://blog.5-23.dev/p/zero2bevy-4/</link>
-        <pubDate>Thu, 11 Apr 2024 00:00:00 +0000</pubDate>
-        
-        <guid>https://blog.5-23.dev/p/zero2bevy-4/</guid>
-        <description>&lt;img src="https://blog.5-23.dev/p/zero2bevy-4/thumb.jpg" alt="Featured image of post Zero부터 시작하는 bevy - 4" /&gt;</description>
-        </item>
-        <item>
+        <lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.5-23.dev/tags/rust/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Zero부터 시작하는 bevy - 3</title>
         <link>https://blog.5-23.dev/p/zero2bevy-3/</link>
         <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
