@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Rust on rustacean@5-23.dev</title>
-        <link>http://localhost:1313/tags/rust/</link>
+        <link>https://blog.5-23.dev/tags/rust/</link>
         <description>Recent content in Rust on rustacean@5-23.dev</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 11 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/rust/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 12 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.5-23.dev/tags/rust/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Zero부터 시작하는 bevy - 4</title>
-        <link>http://localhost:1313/p/zero2bevy-4/</link>
-        <pubDate>Thu, 11 Apr 2024 00:00:00 +0000</pubDate>
+        <link>https://blog.5-23.dev/p/zero2bevy-4/</link>
+        <pubDate>Fri, 12 Apr 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/zero2bevy-4/</guid>
-        <description>&lt;img src="http://localhost:1313/p/zero2bevy-4/thumb.jpg" alt="Featured image of post Zero부터 시작하는 bevy - 4" /&gt;&lt;h1 id=&#34;번들에-컴포넌트-삽입하기&#34;&gt;번들에 컴포넌트 삽입하기&lt;/h1&gt;
+        <guid>https://blog.5-23.dev/p/zero2bevy-4/</guid>
+        <description>&lt;img src="https://blog.5-23.dev/p/zero2bevy-4/thumb.jpg" alt="Featured image of post Zero부터 시작하는 bevy - 4" /&gt;&lt;h1 id=&#34;번들에-컴포넌트-삽입하기&#34;&gt;번들에 컴포넌트 삽입하기&lt;/h1&gt;
 &lt;p&gt;번들을 삽입하려면 스폰을 한후 &lt;code&gt;.insert(컴포넌트)&lt;/code&gt;를 사용하여 삽입을 할수 있다&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -88,10 +88,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/zero2bevy-4/insert.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://blog.5-23.dev/p/zero2bevy-4/insert.png&#34;
 	width=&#34;3350&#34;
 	height=&#34;2076&#34;
-	srcset=&#34;http://localhost:1313/p/zero2bevy-4/insert_hu1c6416448f2a5f720a789f8d5b44ee91_1062093_480x0_resize_box_3.png 480w, http://localhost:1313/p/zero2bevy-4/insert_hu1c6416448f2a5f720a789f8d5b44ee91_1062093_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.5-23.dev/p/zero2bevy-4/insert_hu1c6416448f2a5f720a789f8d5b44ee91_1062093_480x0_resize_box_3.png 480w, https://blog.5-23.dev/p/zero2bevy-4/insert_hu1c6416448f2a5f720a789f8d5b44ee91_1062093_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;실행결과&#34;
@@ -189,27 +189,15 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/zero2bevy-4/move.png&#34;
-	width=&#34;1152&#34;
-	height=&#34;720&#34;
-	srcset=&#34;http://localhost:1313/p/zero2bevy-4/move_hu5edf72174622d1dbfaf70fd95db8c690_1511507_480x0_resize_box_3.png 480w, http://localhost:1313/p/zero2bevy-4/move_hu5edf72174622d1dbfaf70fd95db8c690_1511507_1024x0_resize_box_3.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;160&#34;
-		data-flex-basis=&#34;384px&#34;
-	
-&gt;&lt;/p&gt;
-</description>
+&lt;/div&gt;&lt;img src=&#34;move.png&#34; width=&#34;100%&#34; alt=&#34;실행화면&#34;&gt;</description>
         </item>
         <item>
         <title>Zero부터 시작하는 bevy - 3</title>
-        <link>http://localhost:1313/p/zero2bevy-3/</link>
+        <link>https://blog.5-23.dev/p/zero2bevy-3/</link>
         <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/zero2bevy-3/</guid>
-        <description>&lt;img src="http://localhost:1313/p/zero2bevy-3/thumb.jpg" alt="Featured image of post Zero부터 시작하는 bevy - 3" /&gt;&lt;h2 id=&#34;컴포넌트-만들기&#34;&gt;컴포넌트 만들기&lt;/h2&gt;
+        <guid>https://blog.5-23.dev/p/zero2bevy-3/</guid>
+        <description>&lt;img src="https://blog.5-23.dev/p/zero2bevy-3/thumb.jpg" alt="Featured image of post Zero부터 시작하는 bevy - 3" /&gt;&lt;h2 id=&#34;컴포넌트-만들기&#34;&gt;컴포넌트 만들기&lt;/h2&gt;
 &lt;p&gt;화면에 있는 모든 객채를 검사하면 안되니 컴포넌트라는것을 만들어 하나씩 검사해보자.
 나는 &lt;code&gt;MyCustomComponent&lt;/code&gt;라는 이름으로 만들었는데 이름은 바꿔도 상관없다&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -300,10 +288,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/zero2bevy-3/defualt-run.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://blog.5-23.dev/p/zero2bevy-3/defualt-run.png&#34;
 	width=&#34;3360&#34;
 	height=&#34;2100&#34;
-	srcset=&#34;http://localhost:1313/p/zero2bevy-3/defualt-run_hu207d69dd0c386a4fea201fddf61f1c1b_802541_480x0_resize_box_3.png 480w, http://localhost:1313/p/zero2bevy-3/defualt-run_hu207d69dd0c386a4fea201fddf61f1c1b_802541_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.5-23.dev/p/zero2bevy-3/defualt-run_hu207d69dd0c386a4fea201fddf61f1c1b_802541_480x0_resize_box_3.png 480w, https://blog.5-23.dev/p/zero2bevy-3/defualt-run_hu207d69dd0c386a4fea201fddf61f1c1b_802541_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;실행결과&#34;
@@ -318,11 +306,11 @@
         </item>
         <item>
         <title>Zero부터 시작하는 bevy - 특별편?</title>
-        <link>http://localhost:1313/p/zero2bevy-2.5/</link>
+        <link>https://blog.5-23.dev/p/zero2bevy-2.5/</link>
         <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/zero2bevy-2.5/</guid>
-        <description>&lt;img src="http://localhost:1313/p/zero2bevy-2.5/thumb.jpg" alt="Featured image of post Zero부터 시작하는 bevy - 특별편?" /&gt;&lt;h2 id=&#34;설정&#34;&gt;설정&lt;/h2&gt;
+        <guid>https://blog.5-23.dev/p/zero2bevy-2.5/</guid>
+        <description>&lt;img src="https://blog.5-23.dev/p/zero2bevy-2.5/thumb.jpg" alt="Featured image of post Zero부터 시작하는 bevy - 특별편?" /&gt;&lt;h2 id=&#34;설정&#34;&gt;설정&lt;/h2&gt;
 &lt;p&gt;배경을 없에기 위해 main함수에 이 옵션을 추가해줘야한다&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -397,10 +385,10 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/5-23/pet&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;응용코드&lt;/a&gt;
-&lt;img src=&#34;http://localhost:1313/p/zero2bevy-2.5/pet.png&#34;
+&lt;img src=&#34;https://blog.5-23.dev/p/zero2bevy-2.5/pet.png&#34;
 	width=&#34;3360&#34;
 	height=&#34;2098&#34;
-	srcset=&#34;http://localhost:1313/p/zero2bevy-2.5/pet_hub599a67fd175946be6eb79719849c137_769966_480x0_resize_box_3.png 480w, http://localhost:1313/p/zero2bevy-2.5/pet_hub599a67fd175946be6eb79719849c137_769966_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.5-23.dev/p/zero2bevy-2.5/pet_hub599a67fd175946be6eb79719849c137_769966_480x0_resize_box_3.png 480w, https://blog.5-23.dev/p/zero2bevy-2.5/pet_hub599a67fd175946be6eb79719849c137_769966_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;pet&#34;
@@ -415,11 +403,11 @@
         </item>
         <item>
         <title>Zero부터 시작하는 bevy - 2</title>
-        <link>http://localhost:1313/p/zero2bevy-2/</link>
+        <link>https://blog.5-23.dev/p/zero2bevy-2/</link>
         <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/zero2bevy-2/</guid>
-        <description>&lt;img src="http://localhost:1313/p/zero2bevy-2/thumb.jpg" alt="Featured image of post Zero부터 시작하는 bevy - 2" /&gt;&lt;h1 id=&#34;번들&#34;&gt;번들&lt;/h1&gt;
+        <guid>https://blog.5-23.dev/p/zero2bevy-2/</guid>
+        <description>&lt;img src="https://blog.5-23.dev/p/zero2bevy-2/thumb.jpg" alt="Featured image of post Zero부터 시작하는 bevy - 2" /&gt;&lt;h1 id=&#34;번들&#34;&gt;번들&lt;/h1&gt;
 &lt;p&gt;번들은 commands.spawn을 통해 소환할수 있고, 종류가 좀 많다. 그러니 우리는 몇개만 알아보자&lt;/p&gt;
 &lt;h2 id=&#34;nodebundle&#34;&gt;NodeBundle&lt;/h2&gt;
 &lt;p&gt;NodeBundle은 간단하게 화면에 사각형을 띄우기에 좋다.&lt;/p&gt;
@@ -513,10 +501,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/zero2bevy-2/node_bunddle.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://blog.5-23.dev/p/zero2bevy-2/node_bunddle.png&#34;
 	width=&#34;3360&#34;
 	height=&#34;2100&#34;
-	srcset=&#34;http://localhost:1313/p/zero2bevy-2/node_bunddle_hu285fa9d5f7431a51df949d1c42a3e5a0_980777_480x0_resize_box_3.png 480w, http://localhost:1313/p/zero2bevy-2/node_bunddle_hu285fa9d5f7431a51df949d1c42a3e5a0_980777_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.5-23.dev/p/zero2bevy-2/node_bunddle_hu285fa9d5f7431a51df949d1c42a3e5a0_980777_480x0_resize_box_3.png 480w, https://blog.5-23.dev/p/zero2bevy-2/node_bunddle_hu285fa9d5f7431a51df949d1c42a3e5a0_980777_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;실행화면&#34;
@@ -614,10 +602,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/zero2bevy-2/image_bunddle.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://blog.5-23.dev/p/zero2bevy-2/image_bunddle.png&#34;
 	width=&#34;3360&#34;
 	height=&#34;2098&#34;
-	srcset=&#34;http://localhost:1313/p/zero2bevy-2/image_bunddle_hub599a67fd175946be6eb79719849c137_1003305_480x0_resize_box_3.png 480w, http://localhost:1313/p/zero2bevy-2/image_bunddle_hub599a67fd175946be6eb79719849c137_1003305_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.5-23.dev/p/zero2bevy-2/image_bunddle_hub599a67fd175946be6eb79719849c137_1003305_480x0_resize_box_3.png 480w, https://blog.5-23.dev/p/zero2bevy-2/image_bunddle_hub599a67fd175946be6eb79719849c137_1003305_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;실행화면&#34;
@@ -696,10 +684,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/zero2bevy-2/sprite_bunddle.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://blog.5-23.dev/p/zero2bevy-2/sprite_bunddle.png&#34;
 	width=&#34;3360&#34;
 	height=&#34;2100&#34;
-	srcset=&#34;http://localhost:1313/p/zero2bevy-2/sprite_bunddle_hu285fa9d5f7431a51df949d1c42a3e5a0_1098463_480x0_resize_box_3.png 480w, http://localhost:1313/p/zero2bevy-2/sprite_bunddle_hu285fa9d5f7431a51df949d1c42a3e5a0_1098463_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.5-23.dev/p/zero2bevy-2/sprite_bunddle_hu285fa9d5f7431a51df949d1c42a3e5a0_1098463_480x0_resize_box_3.png 480w, https://blog.5-23.dev/p/zero2bevy-2/sprite_bunddle_hu285fa9d5f7431a51df949d1c42a3e5a0_1098463_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;실행화면&#34;
@@ -716,11 +704,11 @@
         </item>
         <item>
         <title>Zero부터 시작하는 bevy - 1</title>
-        <link>http://localhost:1313/p/zero2bevy-1/</link>
+        <link>https://blog.5-23.dev/p/zero2bevy-1/</link>
         <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/zero2bevy-1/</guid>
-        <description>&lt;img src="http://localhost:1313/p/zero2bevy-1/thumb.jpg" alt="Featured image of post Zero부터 시작하는 bevy - 1" /&gt;&lt;h1 id=&#34;카메라-설정하기&#34;&gt;카메라 설정하기&lt;/h1&gt;
+        <guid>https://blog.5-23.dev/p/zero2bevy-1/</guid>
+        <description>&lt;img src="https://blog.5-23.dev/p/zero2bevy-1/thumb.jpg" alt="Featured image of post Zero부터 시작하는 bevy - 1" /&gt;&lt;h1 id=&#34;카메라-설정하기&#34;&gt;카메라 설정하기&lt;/h1&gt;
 &lt;p&gt;화면을 보이게 하기 위해서는 카메라를 스폰해줘야한다.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -751,10 +739,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;실행하면 배경이 &lt;code&gt;검정&lt;/code&gt; -&amp;gt; &lt;code&gt;회색&lt;/code&gt;으로 바껴있을꺼다
-&lt;img src=&#34;http://localhost:1313/p/zero2bevy-1/camera.png&#34;
+&lt;img src=&#34;https://blog.5-23.dev/p/zero2bevy-1/camera.png&#34;
 	width=&#34;3326&#34;
 	height=&#34;2048&#34;
-	srcset=&#34;http://localhost:1313/p/zero2bevy-1/camera_hu1f71ba2a00af965a375b7a0170eb969b_887601_480x0_resize_box_3.png 480w, http://localhost:1313/p/zero2bevy-1/camera_hu1f71ba2a00af965a375b7a0170eb969b_887601_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.5-23.dev/p/zero2bevy-1/camera_hu1f71ba2a00af965a375b7a0170eb969b_887601_480x0_resize_box_3.png 480w, https://blog.5-23.dev/p/zero2bevy-1/camera_hu1f71ba2a00af965a375b7a0170eb969b_887601_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;camera.png&#34;
@@ -824,10 +812,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/zero2bevy-1/bg-color.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://blog.5-23.dev/p/zero2bevy-1/bg-color.png&#34;
 	width=&#34;3352&#34;
 	height=&#34;2096&#34;
-	srcset=&#34;http://localhost:1313/p/zero2bevy-1/bg-color_hu6c3a657d96ad84386a5804f2273d39e2_957800_480x0_resize_box_3.png 480w, http://localhost:1313/p/zero2bevy-1/bg-color_hu6c3a657d96ad84386a5804f2273d39e2_957800_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.5-23.dev/p/zero2bevy-1/bg-color_hu6c3a657d96ad84386a5804f2273d39e2_957800_480x0_resize_box_3.png 480w, https://blog.5-23.dev/p/zero2bevy-1/bg-color_hu6c3a657d96ad84386a5804f2273d39e2_957800_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -840,11 +828,11 @@
         </item>
         <item>
         <title>Zero부터 시작하는 bevy - 0</title>
-        <link>http://localhost:1313/p/zero2bevy-0/</link>
+        <link>https://blog.5-23.dev/p/zero2bevy-0/</link>
         <pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/zero2bevy-0/</guid>
-        <description>&lt;img src="http://localhost:1313/p/zero2bevy-0/thumb.jpg" alt="Featured image of post Zero부터 시작하는 bevy - 0" /&gt;&lt;h1 id=&#34;베비-설치&#34;&gt;베비 설치&lt;/h1&gt;
+        <guid>https://blog.5-23.dev/p/zero2bevy-0/</guid>
+        <description>&lt;img src="https://blog.5-23.dev/p/zero2bevy-0/thumb.jpg" alt="Featured image of post Zero부터 시작하는 bevy - 0" /&gt;&lt;h1 id=&#34;베비-설치&#34;&gt;베비 설치&lt;/h1&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -899,10 +887,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/zero2bevy-0/startup.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://blog.5-23.dev/p/zero2bevy-0/startup.png&#34;
 	width=&#34;1212&#34;
 	height=&#34;188&#34;
-	srcset=&#34;http://localhost:1313/p/zero2bevy-0/startup_hu40bac16c001336601b9ffef5d178d804_41408_480x0_resize_box_3.png 480w, http://localhost:1313/p/zero2bevy-0/startup_hu40bac16c001336601b9ffef5d178d804_41408_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.5-23.dev/p/zero2bevy-0/startup_hu40bac16c001336601b9ffef5d178d804_41408_480x0_resize_box_3.png 480w, https://blog.5-23.dev/p/zero2bevy-0/startup_hu40bac16c001336601b9ffef5d178d804_41408_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;hello bevy&#34;
@@ -941,10 +929,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/zero2bevy-0/open_screen.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://blog.5-23.dev/p/zero2bevy-0/open_screen.png&#34;
 	width=&#34;3360&#34;
 	height=&#34;2100&#34;
-	srcset=&#34;http://localhost:1313/p/zero2bevy-0/open_screen_hu285fa9d5f7431a51df949d1c42a3e5a0_918921_480x0_resize_box_3.png 480w, http://localhost:1313/p/zero2bevy-0/open_screen_hu285fa9d5f7431a51df949d1c42a3e5a0_918921_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.5-23.dev/p/zero2bevy-0/open_screen_hu285fa9d5f7431a51df949d1c42a3e5a0_918921_480x0_resize_box_3.png 480w, https://blog.5-23.dev/p/zero2bevy-0/open_screen_hu285fa9d5f7431a51df949d1c42a3e5a0_918921_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;screen&#34;
@@ -959,11 +947,11 @@
         </item>
         <item>
         <title>연산자 오버로드</title>
-        <link>http://localhost:1313/p/rust-syntax-ops/</link>
+        <link>https://blog.5-23.dev/p/rust-syntax-ops/</link>
         <pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/rust-syntax-ops/</guid>
-        <description>&lt;img src="http://localhost:1313/p/rust-syntax-ops/thumb.jpg" alt="Featured image of post 연산자 오버로드" /&gt;&lt;p&gt;rust에서 연산자 오버로드를 사용하려면 &lt;code&gt;std::ops&lt;/code&gt;에 있는 trait을 상속 시키면 된다&lt;/p&gt;
+        <guid>https://blog.5-23.dev/p/rust-syntax-ops/</guid>
+        <description>&lt;img src="https://blog.5-23.dev/p/rust-syntax-ops/thumb.jpg" alt="Featured image of post 연산자 오버로드" /&gt;&lt;p&gt;rust에서 연산자 오버로드를 사용하려면 &lt;code&gt;std::ops&lt;/code&gt;에 있는 trait을 상속 시키면 된다&lt;/p&gt;
 &lt;p&gt;아레 코드는 Vec2끼리 더하기를 가능하게 하는 코드다&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

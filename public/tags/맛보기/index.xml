@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>맛보기 on rustacean@5-23.dev</title>
-        <link>http://localhost:1313/tags/%EB%A7%9B%EB%B3%B4%EA%B8%B0/</link>
+        <link>https://blog.5-23.dev/tags/%EB%A7%9B%EB%B3%B4%EA%B8%B0/</link>
         <description>Recent content in 맛보기 on rustacean@5-23.dev</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 16 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%EB%A7%9B%EB%B3%B4%EA%B8%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 16 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.5-23.dev/tags/%EB%A7%9B%EB%B3%B4%EA%B8%B0/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>gleam언어 맛보기</title>
-        <link>http://localhost:1313/p/gleam-1/</link>
+        <link>https://blog.5-23.dev/p/gleam-1/</link>
         <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/gleam-1/</guid>
-        <description>&lt;img src="http://localhost:1313/p/gleam-1/thumb.jpg" alt="Featured image of post gleam언어 맛보기" /&gt;&lt;h1 id=&#34;gleam맛보기&#34;&gt;gleam맛보기&lt;/h1&gt;
+        <guid>https://blog.5-23.dev/p/gleam-1/</guid>
+        <description>&lt;img src="https://blog.5-23.dev/p/gleam-1/thumb.jpg" alt="Featured image of post gleam언어 맛보기" /&gt;&lt;h1 id=&#34;gleam맛보기&#34;&gt;gleam맛보기&lt;/h1&gt;
 &lt;p&gt;gleam은 erlang환경에서 돌아가는 언어다(elixir처럼)&lt;/p&gt;
 &lt;h2 id=&#34;gleam-install&#34;&gt;gleam install&lt;/h2&gt;
 &lt;ul&gt;
