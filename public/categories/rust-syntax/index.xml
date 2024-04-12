@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Rust-Syntax on rustacean@5-23.dev</title>
-        <link>https://blog.5-23.dev/categories/rust-syntax/</link>
-        <description>Recent content in Rust-Syntax on rustacean@5-23.dev</description>
+        <title>Rust Syntax on rustacean@5-23.dev</title>
+        <link>http://localhost:1313/categories/rust-syntax/</link>
+        <description>Recent content in Rust Syntax on rustacean@5-23.dev</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 14 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.5-23.dev/categories/rust-syntax/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 14 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/rust-syntax/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>연산자 오버로드</title>
-        <link>https://blog.5-23.dev/p/rust-syntax-ops/</link>
+        <link>http://localhost:1313/p/rust-syntax-ops/</link>
         <pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.5-23.dev/p/rust-syntax-ops/</guid>
-        <description>&lt;img src="https://blog.5-23.dev/p/rust-syntax-ops/thumb.jpg" alt="Featured image of post 연산자 오버로드" /&gt;&lt;p&gt;rust에서 연산자 오버로드를 사용하려면 &lt;code&gt;std::ops&lt;/code&gt;에 있는 trait을 상속 시키면 된다&lt;/p&gt;
+        <guid>http://localhost:1313/p/rust-syntax-ops/</guid>
+        <description>&lt;img src="http://localhost:1313/p/rust-syntax-ops/thumb.jpg" alt="Featured image of post 연산자 오버로드" /&gt;&lt;p&gt;rust에서 연산자 오버로드를 사용하려면 &lt;code&gt;std::ops&lt;/code&gt;에 있는 trait을 상속 시키면 된다&lt;/p&gt;
 &lt;p&gt;아레 코드는 Vec2끼리 더하기를 가능하게 하는 코드다&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

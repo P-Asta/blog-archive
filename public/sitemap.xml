@@ -2,67 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.5-23.dev/p/zero2bevy-3/</loc>
+    <loc>http://localhost:1313/p/zero2bevy-4/</loc>
+    <lastmod>2024-04-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/zero2bevy-3/</loc>
     <lastmod>2024-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.5-23.dev/p/zero2bevy-2.5/</loc>
+    <loc>http://localhost:1313/p/zero2bevy-2.5/</loc>
     <lastmod>2024-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.5-23.dev/p/gleam-1/</loc>
+    <loc>http://localhost:1313/p/gleam-1/</loc>
     <lastmod>2024-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.5-23.dev/p/zero2bevy-2/</loc>
+    <loc>http://localhost:1313/p/zero2bevy-2/</loc>
     <lastmod>2024-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.5-23.dev/p/zero2bevy-1/</loc>
+    <loc>http://localhost:1313/p/zero2bevy-1/</loc>
     <lastmod>2024-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.5-23.dev/p/zero2bevy-0/</loc>
+    <loc>http://localhost:1313/p/zero2bevy-0/</loc>
     <lastmod>2024-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.5-23.dev/p/rust-syntax-ops/</loc>
+    <loc>http://localhost:1313/p/rust-syntax-ops/</loc>
     <lastmod>2024-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.5-23.dev/</loc>
-    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.5-23.dev/post/</loc>
-    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/categories/bevy/</loc>
+    <lastmod>2024-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.5-23.dev/categories/bevy/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2024-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.5-23.dev/categories/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2024-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.5-23.dev/tags/rust/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/rust/</loc>
+    <lastmod>2024-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.5-23.dev/tags/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.5-23.dev/tags/gleam/</loc>
+    <loc>http://localhost:1313/tags/gleam/</loc>
     <lastmod>2024-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.5-23.dev/categories/gleam/</loc>
+    <loc>http://localhost:1313/categories/gleam/</loc>
     <lastmod>2024-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.5-23.dev/tags/%EB%A7%9B%EB%B3%B4%EA%B8%B0/</loc>
+    <loc>http://localhost:1313/tags/%EB%A7%9B%EB%B3%B4%EA%B8%B0/</loc>
     <lastmod>2024-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.5-23.dev/categories/rust-syntax/</loc>
+    <loc>http://localhost:1313/categories/rust-syntax/</loc>
     <lastmod>2024-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.5-23.dev/archives/</loc>
+    <loc>http://localhost:1313/archives/</loc>
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.5-23.dev/page/</loc>
+    <loc>http://localhost:1313/page/</loc>
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.5-23.dev/categories/example-category/</loc>
+    <loc>http://localhost:1313/links/</loc>
   </url><url>
-    <loc>https://blog.5-23.dev/links/</loc>
-  </url><url>
-    <loc>https://blog.5-23.dev/search/</loc>
+    <loc>http://localhost:1313/search/</loc>
   </url>
 </urlset>
