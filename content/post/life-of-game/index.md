@@ -1,6 +1,6 @@
 ---
 title: Game of Life 만들기
-description: 번들 움직이게 하기
+description: rust/wasm을 써서 game of life만들기
 slug: log
 date: 2024-04-17 00:00:00+0000
 image: thumb.jpg
