@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.5-23.dev/p/log/</loc>
+    <lastmod>2024-04-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.5-23.dev/p/zero2bevy-4/</loc>
     <lastmod>2024-04-12T00:00:00+00:00</lastmod>
   </url><url>
@@ -27,21 +30,27 @@
     <lastmod>2024-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.5-23.dev/</loc>
-    <lastmod>2024-04-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.5-23.dev/categories/bevy/</loc>
-    <lastmod>2024-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.5-23.dev/categories/</loc>
-    <lastmod>2024-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.5-23.dev/post/</loc>
-    <lastmod>2024-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.5-23.dev/tags/rust/</loc>
-    <lastmod>2024-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.5-23.dev/tags/</loc>
+    <lastmod>2024-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.5-23.dev/tags/wasm/</loc>
+    <lastmod>2024-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.5-23.dev/categories/wasm/</loc>
+    <lastmod>2024-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.5-23.dev/categories/bevy/</loc>
     <lastmod>2024-04-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.5-23.dev/tags/gleam/</loc>
