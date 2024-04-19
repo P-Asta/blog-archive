@@ -16,3 +16,9 @@ hasCJKLanguage = false
 # disqusShortname = "hugo-theme-stack"
 theme = "hugo-theme-stack"
 enableRobotsTXT = true
+
+[sitemap]
+changeFreq = ''
+disable = false
+filename = 'sitemap.xml'
+priority = -1
