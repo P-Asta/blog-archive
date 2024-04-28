@@ -1,2 +1,8 @@
 User-agent: *
+Disallow:
 Sitemap: https://blog.5-23.dev/sitemap.xml
+
+Allow: /ads.txt
+Disallow: /tags
+Disallow: /categories
+Disallow: /page
