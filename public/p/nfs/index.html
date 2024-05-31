@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="nfs서버 설정과, macos에서 nfs서버를 연결(mount)하는 방법을 알아보겠습니다.">
+<title>2024 nfs로 빠르게 서버파일 관리하기</title>
+
+<link rel='canonical' href='https://blog.5-23.dev/p/nfs/'>
+
+<link rel="stylesheet" href="/scss/style.min.d8118f156935b64eca93aca758476adca858d2c47354971654d9bd2933a0e45f.css"><meta property='og:title' content="2024 nfs로 빠르게 서버파일 관리하기">
+<meta property='og:description' content="nfs서버 설정과, macos에서 nfs서버를 연결(mount)하는 방법을 알아보겠습니다.">
+<meta property='og:url' content='https://blog.5-23.dev/p/nfs/'>
+<meta property='og:site_name' content='rustacean@5-23.dev'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='linux' /><meta property='article:tag' content='리눅스' /><meta property='article:tag' content='nfs' /><meta property='article:tag' content='network file system' /><meta property='article:published_time' content='2024-05-24T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-05-24T00:00:00&#43;00:00'/><meta property='og:image' content='https://blog.5-23.dev/p/nfs/thumb.jpg' />
+<meta name="twitter:title" content="2024 nfs로 빠르게 서버파일 관리하기">
+<meta name="twitter:description" content="nfs서버 설정과, macos에서 nfs서버를 연결(mount)하는 방법을 알아보겠습니다."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://blog.5-23.dev/p/nfs/thumb.jpg' />
+    <link rel="shortcut icon" href="/favicon.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="메뉴 여닫기">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu7d2242c54bcb94dd7727962b9d96a130_507502_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🦀</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">rustacean@5-23.dev</a></h1>
+            <h2 class="site-description">i use rust btw</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/5-23'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>다크 모드</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">목차</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#uid-gid구하기">uid, gid구하기</a></li>
+    <li><a href="#설정파일-예시">설정파일 예시</a></li>
+    <li><a href="#서버-실행">서버 실행</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#폴더-만들기">폴더 만들기</a></li>
+    <li><a href="#연결mount하기">연결(mount)하기</a></li>
+    <li><a href="#연결해제umount하기">연결해제(umount)하기</a></li>
+    <li><a href="#쉽게-연결할수있는-쉘파일-작성">쉽게 연결할수있는 쉘파일 작성</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header" onclick="location.href='\/p\/nfs\/'" style="cursor: pointer;" >
+        <div class="article-image">
+            <a href="/p/nfs/">
+                <img src="/p/nfs/thumb_hucb85ee61a88800d537b4546288d79188_47941_800x0_resize_q75_box.jpg"
+                        srcset="/p/nfs/thumb_hucb85ee61a88800d537b4546288d79188_47941_800x0_resize_q75_box.jpg 800w, /p/nfs/thumb_hucb85ee61a88800d537b4546288d79188_47941_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="153" 
+                        loading="lazy"
+                        alt="Featured image of post 2024 nfs로 빠르게 서버파일 관리하기" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/nfs/" >
+                Nfs
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/nfs/">2024 nfs로 빠르게 서버파일 관리하기</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            nfs서버 설정과, macos에서 nfs서버를 연결(mount)하는 방법을 알아보겠습니다.
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">May 24, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 분 정도
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+
+    <section class="article-content">
+    
+    
+    <h1 id="nfs가-뭐야">nfs가 뭐야?</h1>
+<p>nfs는 클라이언트 컴퓨터의 사용자가 네트워크 상의 파일을 직접 연결된 스토리지에 접근하는 방식과으로 접근하도록 도와준다.
+udp와 tcp통신을 둘다 지원하며, 인터넷 속도가 느리다면 udp로 빠르다면 tcp로 연결하여 사용하면 된다.</p>
+<h1 id="설치하기">설치하기</h1>
+<p>arch</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fish" data-lang="fish"><span class="line"><span class="cl"><span class="nf">yay</span> <span class="na">-S</span> nfs-utils
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>debian</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fish" data-lang="fish"><span class="line"><span class="cl"><span class="nf">sudo</span> <span class="nf">apt</span> install nfs-kernel-server
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="서버설정">서버설정</h1>
+<p>위 명령어를 썼으면 아마 <code>/etc/exports</code>파일이 만들어젔을 것이다.<br/>
+이제 저 파일을 열어서 수정해보자</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">여는걸/허용할/폴더 허용할/ip들(권한,sync,insecure,all_squash,no_subtree_check,anonuid=유저id,anongid=그룹id)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>만약 모든 ip를 허용하고싶다는 <code>*</code>을 쓰면 된다.</p>
+<h2 id="uid-gid구하기">uid, gid구하기</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ id username
+</span></span><span class="line"><span class="cl">uid=1000(username) gid=1000(username) groups=1000(username),3(sys),998(wheel),981(rfkill)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>이 명령어를 써서 uid와 gid가 1000임을 알수 있다.</p>
+<h2 id="설정파일-예시">설정파일 예시</h2>
+<p>아레는 내 설정파일이다<br/>
+<code>/home/dev523/files</code>는 내가 열기를 허용할 파일을 의미하고<br/>
+rw는 <code>읽기(read)</code> <code>쓰기(write)</code>권한을 의미한다.<br/>
+내ip와 서버컴퓨터가 직접 접속할수 있는걸 원하니 <code>내ip/서버ip</code>를 써서 허용해줬고<br/>
+나의 <code>uid</code>, <code>gid</code>는 <code>1000</code>이니 그렇게 써준다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/home/dev523/files 118.221.195.32/0.0.0.0(rw,sync,insecure,all_squash,no_subtree_check,anonuid=1000,anongid=1000)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="서버-실행">서버 실행</h2>
+<p><code>exportfs</code>를 사용하여 아까 설정한 파일을 적용시켜주고 <code>systemctrl</code>을 사용하여 nfs서버를 실행시켜준다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">exportfs</span> <span class="o">-</span><span class="n">a</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">enable</span> <span class="o">--</span><span class="n">now</span> <span class="n">nfs</span><span class="o">-</span><span class="n">server</span><span class="o">.</span><span class="n">service</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="클라이언트에서-연결">클라이언트에서 연결</h1>
+<p>나는 macos를 사용중이니 mac에서 연결하는방법만 쓰겠다.
+다른os에서 연결하는방법은 다른사람들의 블로그를 참고하기 바란다.</p>
+<h2 id="폴더-만들기">폴더 만들기</h2>
+<p>먼저 <code>mkdir</code>을 사용해 연결(mount)할 폴더를 만들어준다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fish" data-lang="fish"><span class="line"><span class="cl"><span class="nf">mkdir</span> myServer
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="연결mount하기">연결(mount)하기</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo mount -t nfs -o resvport,권한,noowners,vers=서버-버전 ip:/아까/설정에서/허용한/파일/주소 ./연결(mount)할/폴더/경로
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>예시는 다음과 같다.
+나는 rw수정밑 읽기 권한을 허용했고 tcp로 연결했다 내 ip가 있는 도매인을 써줬고 다음으로는 내가 허용한 폴더의 경로를 써줬다.
+만약 udp로 연결하고 싶다면 vers를 4가 아니라 3으로 바꿔주면 된다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo mount -t nfs -o resvport,rw,noowners,vers=4 내-서버ip:/home/dev523/files /Users/dev523/myServer
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="연결해제umount하기">연결해제(umount)하기</h2>
+<p>umount하는 방법은 연결하는것과 다르게 매우 쉽다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo umount /아까/연결(mount)한/폴더/경로
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>나는 아레와 같이 써줬다</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo umount /Users/dev523/myServer
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="쉽게-연결할수있는-쉘파일-작성">쉽게 연결할수있는 쉘파일 작성</h2>
+<p>나는 연결이 끊길때마다 다시명령어를 쓰는게 귀찮아서 아레와 같은 쉘 코드를 만들어놨다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fish" data-lang="fish"><span class="line"><span class="cl"><span class="ch">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="ch"></span><span class="nv">MOUNT_PATH</span><span class="o">=</span><span class="s2">&#34;/Users/dev523/Server&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">echo</span> <span class="nv">$MOUNT_PATH</span>
+</span></span><span class="line"><span class="cl"><span class="nf">sudo</span> <span class="nf">umount</span> <span class="nv">$MOUNT_PATH</span>
+</span></span><span class="line"><span class="cl"><span class="nf">sudo</span> <span class="nf">mount</span> <span class="na">-t</span> nfs <span class="na">-o</span> resvport,rw,noowners,<span class="nv">vers</span><span class="o">=</span><span class="m">4</span> <span class="nf">내-서버ip</span>:/home/dev523/files <span class="nv">$MOUNT_PATH</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/nfs/end.png"
+	width="2384"
+	height="628"
+	srcset="/p/nfs/end_huae389c6a9e4f17b83cfbe9c866cc7fd9_369563_480x0_resize_box_3.png 480w, /p/nfs/end_huae389c6a9e4f17b83cfbe9c866cc7fd9_369563_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="끝"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="379"
+		data-flex-basis="911px"
+	
+></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/linux/">Linux</a>
+        
+            <a href="/tags/%EB%A6%AC%EB%88%85%EC%8A%A4/">리눅스</a>
+        
+            <a href="/tags/nfs/">Nfs</a>
+        
+            <a href="/tags/network-file-system/">Network File System</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            마지막 수정:  May 24, 2024 00:00 UTC
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="5-23/blog"
+    data-repo-id="R_kgDOLgAyXw"
+    data-category="General"
+    data-category-id="DIC_kwDOLgAyX84Cd9HM"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="en"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2024 rustacean@5-23.dev
+    </section>
+    
+    <section class="powerby">
+        <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>로 만듦 <br />
+        <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>의 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.24.1">Stack</a></b> 테마 사용 중
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

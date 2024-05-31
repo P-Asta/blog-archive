@@ -8,6 +8,9 @@ categories:
     - bevy
 tags:
     - rust
+    - bevy
+    - 러스트
+    - 배비
 weight: 1
 ---
 ## 설정

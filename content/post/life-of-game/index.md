@@ -9,6 +9,8 @@ categories:
 tags:
     - rust
     - wasm
+    - 러스트
+    - 웹 어셈블리
 weight: 1
 ---
 

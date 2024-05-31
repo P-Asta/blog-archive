@@ -8,6 +8,11 @@ categories:
     - rust-syntax
 tags:
     - rust
+    - rust-syntax
+    - operator overload
+    - 러스트
+    - 러스트 문법
+    - 연산자 오버로드
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
