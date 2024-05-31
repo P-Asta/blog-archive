@@ -47,12 +47,12 @@ uid=1000(username) gid=1000(username) groups=1000(username),3(sys),998(wheel),98
 
 ## 설정파일 예시
 아레는 내 설정파일이다<br/>
-`/home/dev523/files`는 내가 열기를 허용할 파일을 의미하고<br/>
+`/home/realsus/files`는 내가 열기를 허용할 파일을 의미하고<br/>
 rw는 `읽기(read)` `쓰기(write)`권한을 의미한다.<br/>
 내ip와 서버컴퓨터가 직접 접속할수 있는걸 원하니 `내ip/서버ip`를 써서 허용해줬고<br/>
 나의 `uid`, `gid`는 `1000`이니 그렇게 써준다.
 ```
-/home/dev523/files 118.221.195.32/0.0.0.0(rw,sync,insecure,all_squash,no_subtree_check,anonuid=1000,anongid=1000)
+/home/realsus/files 118.221.195.32/0.0.0.0(rw,sync,insecure,all_squash,no_subtree_check,anonuid=1000,anongid=1000)
 ```
 
 ## 서버 실행
@@ -81,7 +81,7 @@ sudo mount -t nfs -o resvport,권한,noowners,vers=서버-버전 ip:/아까/설�
 나는 rw수정밑 읽기 권한을 허용했고 tcp로 연결했다 내 ip가 있는 도매인을 써줬고 다음으로는 내가 허용한 폴더의 경로를 써줬다.
 만약 udp로 연결하고 싶다면 vers를 4가 아니라 3으로 바꿔주면 된다.
 ```
-sudo mount -t nfs -o resvport,rw,noowners,vers=4 내-서버ip:/home/dev523/files /Users/dev523/myServer
+sudo mount -t nfs -o resvport,rw,noowners,vers=4 내-서버ip:/home/realsus/files /Users/realsus/myServer
 ```
 
 ## 연결해제(umount)하기
@@ -91,15 +91,15 @@ sudo umount /아까/연결(mount)한/폴더/경로
 ```
 나는 아레와 같이 써줬다 
 ```
-sudo umount /Users/dev523/myServer
+sudo umount /Users/realsus/myServer
 ```
 ## 쉽게 연결할수있는 쉘파일 작성
 나는 연결이 끊길때마다 다시명령어를 쓰는게 귀찮아서 아레와 같은 쉘 코드를 만들어놨다.
 ```fish
 #!/bin/bash
-MOUNT_PATH="/Users/dev523/Server"
+MOUNT_PATH="/Users/realsus/Server"
 echo $MOUNT_PATH
 sudo umount $MOUNT_PATH
-sudo mount -t nfs -o resvport,rw,noowners,vers=4 내-서버ip:/home/dev523/files $MOUNT_PATH
+sudo mount -t nfs -o resvport,rw,noowners,vers=4 내-서버ip:/home/realsus/files $MOUNT_PATH
 ```
 ![끝](end.png)

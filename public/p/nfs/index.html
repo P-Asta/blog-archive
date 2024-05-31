@@ -368,7 +368,7 @@ udp와 tcp통신을 둘다 지원하며, 인터넷 속도가 느리다면 udp로
 </div><p>이 명령어를 써서 uid와 gid가 1000임을 알수 있다.</p>
 <h2 id="설정파일-예시">설정파일 예시</h2>
 <p>아레는 내 설정파일이다<br/>
-<code>/home/dev523/files</code>는 내가 열기를 허용할 파일을 의미하고<br/>
+<code>/home/realsus/files</code>는 내가 열기를 허용할 파일을 의미하고<br/>
 rw는 <code>읽기(read)</code> <code>쓰기(write)</code>권한을 의미한다.<br/>
 내ip와 서버컴퓨터가 직접 접속할수 있는걸 원하니 <code>내ip/서버ip</code>를 써서 허용해줬고<br/>
 나의 <code>uid</code>, <code>gid</code>는 <code>1000</code>이니 그렇게 써준다.</p>
@@ -377,7 +377,7 @@ rw는 <code>읽기(read)</code> <code>쓰기(write)</code>권한을 의미한다
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/home/dev523/files 118.221.195.32/0.0.0.0(rw,sync,insecure,all_squash,no_subtree_check,anonuid=1000,anongid=1000)
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/home/realsus/files 118.221.195.32/0.0.0.0(rw,sync,insecure,all_squash,no_subtree_check,anonuid=1000,anongid=1000)
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="서버-실행">서버 실행</h2>
@@ -422,7 +422,7 @@ rw는 <code>읽기(read)</code> <code>쓰기(write)</code>권한을 의미한다
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo mount -t nfs -o resvport,rw,noowners,vers=4 내-서버ip:/home/dev523/files /Users/dev523/myServer
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo mount -t nfs -o resvport,rw,noowners,vers=4 내-서버ip:/home/realsus/files /Users/realsus/myServer
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="연결해제umount하기">연결해제(umount)하기</h2>
@@ -441,7 +441,7 @@ rw는 <code>읽기(read)</code> <code>쓰기(write)</code>권한을 의미한다
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo umount /Users/dev523/myServer
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo umount /Users/realsus/myServer
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="쉽게-연결할수있는-쉘파일-작성">쉽게 연결할수있는 쉘파일 작성</h2>
@@ -456,10 +456,10 @@ rw는 <code>읽기(read)</code> <code>쓰기(write)</code>권한을 의미한다
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fish" data-lang="fish"><span class="line"><span class="cl"><span class="ch">#!/bin/bash
-</span></span></span><span class="line"><span class="cl"><span class="ch"></span><span class="nv">MOUNT_PATH</span><span class="o">=</span><span class="s2">&#34;/Users/dev523/Server&#34;</span>
+</span></span></span><span class="line"><span class="cl"><span class="ch"></span><span class="nv">MOUNT_PATH</span><span class="o">=</span><span class="s2">&#34;/Users/realsus/Server&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="k">echo</span> <span class="nv">$MOUNT_PATH</span>
 </span></span><span class="line"><span class="cl"><span class="nf">sudo</span> <span class="nf">umount</span> <span class="nv">$MOUNT_PATH</span>
-</span></span><span class="line"><span class="cl"><span class="nf">sudo</span> <span class="nf">mount</span> <span class="na">-t</span> nfs <span class="na">-o</span> resvport,rw,noowners,<span class="nv">vers</span><span class="o">=</span><span class="m">4</span> <span class="nf">내-서버ip</span>:/home/dev523/files <span class="nv">$MOUNT_PATH</span>
+</span></span><span class="line"><span class="cl"><span class="nf">sudo</span> <span class="nf">mount</span> <span class="na">-t</span> nfs <span class="na">-o</span> resvport,rw,noowners,<span class="nv">vers</span><span class="o">=</span><span class="m">4</span> <span class="nf">내-서버ip</span>:/home/realsus/files <span class="nv">$MOUNT_PATH</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p><img src="/p/nfs/end.png"

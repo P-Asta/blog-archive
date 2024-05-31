@@ -7,7 +7,7 @@ image: thumb.jpg
 categories:
     - gleam
 tags:
-    - 맛보기
+    - 글램
     - gleam
 weight: 1
 ---
