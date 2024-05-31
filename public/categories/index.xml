@@ -15,6 +15,14 @@
         <description></description>
         </item>
         <item>
+        <title>Rust Syntax</title>
+        <link>https://blog.5-23.dev/categories/linux/</link>
+        <pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.5-23.dev/categories/linux/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Wasm</title>
         <link>https://blog.5-23.dev/categories/wasm/</link>
         <pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
@@ -39,7 +47,7 @@
         <description></description>
         </item>
         <item>
-        <title>Rust Syntax</title>
+        <title>Linux</title>
         <link>https://blog.5-23.dev/categories/rust-syntax/</link>
         <pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate>
         

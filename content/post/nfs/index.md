@@ -5,6 +5,7 @@ slug: nfs
 date: 2024-05-24 00:00:00+0000
 image: thumb.jpg
 categories:
+    - linux
     - nfs
 tags:
     - linux
