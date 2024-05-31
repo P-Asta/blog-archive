@@ -2,7 +2,7 @@
 baseurl = "https://blog.5-23.dev"
 languageCode = "en-us"
 paginate = 5
-title = "rustacean@5-23.dev"
+title = "아스타(Asta)의 평?범한 블로그"
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
@@ -18,7 +18,7 @@ theme = "hugo-theme-stack"
 enableRobotsTXT = true
 
 [sitemap]
-changeFreq = ''
+changeFreq = 'always'
 disable = false
 filename = 'sitemap.xml'
 priority = -1
