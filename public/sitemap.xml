@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.5-23.dev/p/gleam-2/</loc>
+    <lastmod>2024-05-30T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url><url>
     <loc>https://blog.5-23.dev/p/nfs/</loc>
     <lastmod>2024-05-24T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
@@ -43,11 +47,39 @@
     <changefreq>always</changefreq>
   </url><url>
     <loc>https://blog.5-23.dev/</loc>
-    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-30T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
   </url><url>
     <loc>https://blog.5-23.dev/categories/</loc>
-    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-30T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url><url>
+    <loc>https://blog.5-23.dev/tags/gleam/</loc>
+    <lastmod>2024-05-30T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url><url>
+    <loc>https://blog.5-23.dev/categories/gleam/</loc>
+    <lastmod>2024-05-30T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url><url>
+    <loc>https://blog.5-23.dev/post/</loc>
+    <lastmod>2024-05-30T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url><url>
+    <loc>https://blog.5-23.dev/tags/</loc>
+    <lastmod>2024-05-30T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url><url>
+    <loc>https://blog.5-23.dev/tags/type/</loc>
+    <lastmod>2024-05-30T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url><url>
+    <loc>https://blog.5-23.dev/tags/%EA%B8%80%EB%9E%A8/</loc>
+    <lastmod>2024-05-30T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url><url>
+    <loc>https://blog.5-23.dev/tags/%ED%83%80%EC%9E%85/</loc>
+    <lastmod>2024-05-30T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
   </url><url>
     <loc>https://blog.5-23.dev/tags/linux/</loc>
@@ -67,14 +99,6 @@
     <changefreq>always</changefreq>
   </url><url>
     <loc>https://blog.5-23.dev/categories/nfs/</loc>
-    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-  </url><url>
-    <loc>https://blog.5-23.dev/post/</loc>
-    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-  </url><url>
-    <loc>https://blog.5-23.dev/tags/</loc>
     <lastmod>2024-05-24T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
   </url><url>
@@ -112,18 +136,6 @@
   </url><url>
     <loc>https://blog.5-23.dev/tags/%EB%B0%B0%EB%B9%84/</loc>
     <lastmod>2024-04-12T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-  </url><url>
-    <loc>https://blog.5-23.dev/tags/gleam/</loc>
-    <lastmod>2024-03-16T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-  </url><url>
-    <loc>https://blog.5-23.dev/categories/gleam/</loc>
-    <lastmod>2024-03-16T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-  </url><url>
-    <loc>https://blog.5-23.dev/tags/%EA%B8%80%EB%9E%A8/</loc>
-    <lastmod>2024-03-16T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
   </url><url>
     <loc>https://blog.5-23.dev/tags/operator-overload/</loc>

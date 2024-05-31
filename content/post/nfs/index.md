@@ -52,7 +52,7 @@ rw는 `읽기(read)` `쓰기(write)`권한을 의미한다.<br/>
 내ip와 서버컴퓨터가 직접 접속할수 있는걸 원하니 `내ip/서버ip`를 써서 허용해줬고<br/>
 나의 `uid`, `gid`는 `1000`이니 그렇게 써준다.
 ```
-/home/realsus/files 118.221.195.32/0.0.0.0(rw,sync,insecure,all_squash,no_subtree_check,anonuid=1000,anongid=1000)
+/home/realsus/files 192.192.192.192/0.0.0.0(rw,sync,insecure,all_squash,no_subtree_check,anonuid=1000,anongid=1000)
 ```
 
 ## 서버 실행
