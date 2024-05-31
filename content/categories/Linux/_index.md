@@ -1,7 +1,8 @@
 ---
-title: Rust Syntax
-description: Just rust syntax
+title: Linux
+description: Linux server & client
 image:
+
 
 # Badge style
 # style:

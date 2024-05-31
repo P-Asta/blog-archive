@@ -54,6 +54,10 @@
     <lastmod>2024-05-24T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
   </url><url>
+    <loc>https://blog.5-23.dev/categories/linux/</loc>
+    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url><url>
     <loc>https://blog.5-23.dev/tags/network-file-system/</loc>
     <lastmod>2024-05-24T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
@@ -67,10 +71,6 @@
     <changefreq>always</changefreq>
   </url><url>
     <loc>https://blog.5-23.dev/post/</loc>
-    <lastmod>2024-05-24T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-  </url><url>
-    <loc>https://blog.5-23.dev/categories/linux/</loc>
     <lastmod>2024-05-24T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
   </url><url>
