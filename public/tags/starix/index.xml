@@ -7,12 +7,12 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Mon, 03 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.5-23.dev/tags/starix/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Starix로 블로그 업로드알림 만들기</title>
+        <title>Starix로 블로그 업로드알림 만들기!</title>
         <link>https://blog.5-23.dev/p/starix/</link>
         <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
         
         <guid>https://blog.5-23.dev/p/starix/</guid>
-        <description>&lt;img src="https://blog.5-23.dev/p/starix/thumb.jpg" alt="Featured image of post Starix로 블로그 업로드알림 만들기" /&gt;&lt;h1 id=&#34;starix&#34;&gt;starix&lt;/h1&gt;
+        <description>&lt;img src="https://blog.5-23.dev/p/starix/thumb.jpg" alt="Featured image of post Starix로 블로그 업로드알림 만들기!" /&gt;&lt;h1 id=&#34;starix&#34;&gt;starix&lt;/h1&gt;
 &lt;p&gt;starix는 github으로 블로그를 만드는사람을 위해 만들어젔으며, commit을 할때 특정 컨벤션을 사용하면 discord로 알림을 보내게 만들어젔다.&lt;/p&gt;
 &lt;h2 id=&#34;starixtoml&#34;&gt;Starix.toml&lt;/h2&gt;
 &lt;p&gt;{starix.id}는 블로그 id가 들어가게된다.&lt;/p&gt;
