@@ -1,5 +1,5 @@
 ---
-title: Starix로 블로그 업로드알림 만들기
+title: Starix로 블로그 업로드알림 만들기!
 description: 디스코드 웹훅을 사용했어요 :D
 slug: starix
 date: 2024-06-03 00:00:00+0000
