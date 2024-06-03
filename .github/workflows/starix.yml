@@ -19,6 +19,6 @@ jobs:
         chmod +x starix
     - name: run starix
       run: |
-        sleep 120
+        sleep 100
         export URI="${{ secrets.URI }}"
         ./starix
