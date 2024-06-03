@@ -90,4 +90,6 @@ upload(id): 내용
 ```
 fix(id): 내용
 ```
-![alt text](image.png)
+# 결과
+포스트커밋과 수정을 둘다하고 찍었습니다
+![결과](image.png)

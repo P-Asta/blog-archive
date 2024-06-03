@@ -56,7 +56,7 @@ rw는 `읽기(read)` `쓰기(write)`권한을 의미한다.<br/>
 ```
 
 ## 서버 실행
-`exportfs`를 사용하여 아까 설정한 파일을 적용시켜주고 `systemctrl`을 사용하여 nfs서버를 실행시켜준다.
+`exportfs`를 사용하여 아까 설정한 파일을 적용시켜주고 `systemctl`을 사용하여 nfs서버를 실행시켜준다.
 ```
 sudo exportfs -a
 sudo systemctl enable --now nfs-server.service
