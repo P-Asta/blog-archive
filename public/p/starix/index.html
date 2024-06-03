@@ -210,6 +210,7 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
+    <li><a href="#starixyml">starix.yml</a></li>
     <li><a href="#starixtoml">Starix.toml</a></li>
     <li><a href="#secrets-설정">Secrets 설정</a></li>
     <li><a href="#commmit-해보기">commmit 해보기</a>
@@ -316,7 +317,63 @@
     
     <h1 id="starix">starix</h1>
 <p>starix는 github으로 블로그를 만드는사람을 위해 만들어젔으며, commit을 할때 특정 컨벤션을 사용하면 discord로 알림을 보내게 만들어젔다.</p>
-<h2 id="starixtoml">Starix.toml</h2>
+<h2 id="starixyml">starix.yml</h2>
+<p>이걸 그냥 github workflow에 추가해주면된다</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">name</span><span class="p">:</span> <span class="n">Read</span> <span class="ne">Environment</span> <span class="n">Variables</span> <span class="ow">and</span> <span class="n">Save</span> <span class="n">to</span> <span class="ne">File</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">on</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">  <span class="n">push</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">branches</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="n">master</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">jobs</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">  <span class="n">build</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">runs</span><span class="o">-</span><span class="n">on</span><span class="p">:</span> <span class="n">macos</span><span class="o">-</span><span class="n">latest</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">steps</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">Checkout</span> <span class="n">repository</span>
+</span></span><span class="line"><span class="cl">      <span class="n">uses</span><span class="p">:</span> <span class="n">actions</span><span class="o">/</span><span class="n">checkout</span><span class="err">@</span><span class="n">v2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">download</span> <span class="n">file</span>
+</span></span><span class="line"><span class="cl">      <span class="n">run</span><span class="p">:</span> <span class="o">|</span>
+</span></span><span class="line"><span class="cl">        <span class="n">wget</span> <span class="s2">&#34;https://f.5-23.dev/project/starix&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">chmod</span> <span class="o">+</span><span class="n">x</span> <span class="n">starix</span>
+</span></span><span class="line"><span class="cl">    <span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">run</span> <span class="n">starix</span>
+</span></span><span class="line"><span class="cl">      <span class="n">run</span><span class="p">:</span> <span class="o">|</span>
+</span></span><span class="line"><span class="cl">        <span class="n">sleep</span> <span class="mi">120</span>
+</span></span><span class="line"><span class="cl">        <span class="k">export</span> <span class="n">URI</span><span class="o">=</span><span class="s2">&#34;${{ secrets.URI }}&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">./</span><span class="n">starix</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="starixtoml">Starix.toml</h2>
 <p>{starix.id}는 블로그 id가 들어가게된다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

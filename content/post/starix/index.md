@@ -17,6 +17,36 @@ weight: 1
 # starix
 starix는 github으로 블로그를 만드는사람을 위해 만들어젔으며, commit을 할때 특정 컨벤션을 사용하면 discord로 알림을 보내게 만들어젔다.
 
+## starix.yml
+이걸 그냥 github workflow에 추가해주면된다
+```
+name: Read Environment Variables and Save to File
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: download file
+      run: |
+        wget "https://f.5-23.dev/project/starix"
+        chmod +x starix
+    - name: run starix
+      run: |
+        sleep 120
+        export URI="${{ secrets.URI }}"
+        ./starix
+
+```
+
 ## Starix.toml
 {starix.id}는 블로그 id가 들어가게된다.
 ```toml
