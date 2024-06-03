@@ -173,13 +173,15 @@ name은 &lt;code&gt;URI&lt;/code&gt;, secret은 디스코드 웹훅 url을 쓰�
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;fix(id): 내용
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://blog.5-23.dev/p/starix/image.png&#34;
+&lt;/div&gt;&lt;h1 id=&#34;결과&#34;&gt;결과&lt;/h1&gt;
+&lt;p&gt;포스트커밋과 수정을 둘다하고 찍었습니다
+&lt;img src=&#34;https://blog.5-23.dev/p/starix/image.png&#34;
 	width=&#34;2098&#34;
 	height=&#34;1432&#34;
 	srcset=&#34;https://blog.5-23.dev/p/starix/image_hu5e665832582bbb75856c905c1cb74566_249332_480x0_resize_box_3.png 480w, https://blog.5-23.dev/p/starix/image_hu5e665832582bbb75856c905c1cb74566_249332_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;alt text&#34;
+		alt=&#34;결과&#34;
 	
 	
 		class=&#34;gallery-image&#34; 
@@ -369,7 +371,7 @@ rw는 &lt;code&gt;읽기(read)&lt;/code&gt; &lt;code&gt;쓰기(write)&lt;/code&g
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;서버-실행&#34;&gt;서버 실행&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;exportfs&lt;/code&gt;를 사용하여 아까 설정한 파일을 적용시켜주고 &lt;code&gt;systemctrl&lt;/code&gt;을 사용하여 nfs서버를 실행시켜준다.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;exportfs&lt;/code&gt;를 사용하여 아까 설정한 파일을 적용시켜주고 &lt;code&gt;systemctl&lt;/code&gt;을 사용하여 nfs서버를 실행시켜준다.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
