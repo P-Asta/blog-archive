@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.5-23.dev/p/starix/</loc>
+    <lastmod>2024-06-03T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url><url>
     <loc>https://blog.5-23.dev/p/gleam-2/</loc>
     <lastmod>2024-05-30T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
@@ -47,11 +51,39 @@
     <changefreq>always</changefreq>
   </url><url>
     <loc>https://blog.5-23.dev/</loc>
-    <lastmod>2024-05-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-03T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url><url>
+    <loc>https://blog.5-23.dev/tags/blog-webhook/</loc>
+    <lastmod>2024-06-03T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
   </url><url>
     <loc>https://blog.5-23.dev/categories/</loc>
-    <lastmod>2024-05-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-03T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url><url>
+    <loc>https://blog.5-23.dev/post/</loc>
+    <lastmod>2024-06-03T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url><url>
+    <loc>https://blog.5-23.dev/tags/starix/</loc>
+    <lastmod>2024-06-03T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url><url>
+    <loc>https://blog.5-23.dev/categories/starix/</loc>
+    <lastmod>2024-06-03T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url><url>
+    <loc>https://blog.5-23.dev/tags/</loc>
+    <lastmod>2024-06-03T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url><url>
+    <loc>https://blog.5-23.dev/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9B%B9%ED%9B%85/</loc>
+    <lastmod>2024-06-03T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url><url>
+    <loc>https://blog.5-23.dev/tags/%EC%8A%A4%ED%83%80%EB%A6%AD%EC%8A%A4/</loc>
+    <lastmod>2024-06-03T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
   </url><url>
     <loc>https://blog.5-23.dev/tags/gleam/</loc>
@@ -59,14 +91,6 @@
     <changefreq>always</changefreq>
   </url><url>
     <loc>https://blog.5-23.dev/categories/gleam/</loc>
-    <lastmod>2024-05-30T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-  </url><url>
-    <loc>https://blog.5-23.dev/post/</loc>
-    <lastmod>2024-05-30T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-  </url><url>
-    <loc>https://blog.5-23.dev/tags/</loc>
     <lastmod>2024-05-30T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
   </url><url>
