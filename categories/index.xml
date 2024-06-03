@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on 아스타(Asta)의 평?범한 블로그</title>
+        <link>https://blog.5-23.dev/categories/</link>
+        <description>Recent content in Categories on 아스타(Asta)의 평?범한 블로그</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 03 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.5-23.dev/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Starix</title>
+        <link>https://blog.5-23.dev/categories/starix/</link>
+        <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.5-23.dev/categories/starix/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Gleam</title>
+        <link>https://blog.5-23.dev/categories/gleam/</link>
+        <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.5-23.dev/categories/gleam/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Linux</title>
+        <link>https://blog.5-23.dev/categories/linux/</link>
+        <pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.5-23.dev/categories/linux/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Nfs</title>
+        <link>https://blog.5-23.dev/categories/nfs/</link>
+        <pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.5-23.dev/categories/nfs/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Wasm</title>
+        <link>https://blog.5-23.dev/categories/wasm/</link>
+        <pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.5-23.dev/categories/wasm/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Bevy</title>
+        <link>https://blog.5-23.dev/categories/bevy/</link>
+        <pubDate>Fri, 12 Apr 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.5-23.dev/categories/bevy/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Rust Syntax</title>
+        <link>https://blog.5-23.dev/categories/rust-syntax/</link>
+        <pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.5-23.dev/categories/rust-syntax/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
